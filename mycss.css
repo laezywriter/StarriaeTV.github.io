@@ -285,4 +285,7 @@ td:hover {
     .row {
         margin: 0%;
     }
+    .newspaper a{
+        font-size: 10px;
+    }
 }
