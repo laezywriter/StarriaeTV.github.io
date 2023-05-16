@@ -1,0 +1,291 @@
+
+* {box-sizing: border-box;}
+
+body {
+    margin: 0;
+    padding: 10px;
+    background-color: rgba(128, 128, 128, 0.493);
+}
+
+.header {
+    text-align: center;
+    background: linear-gradient(to bottom, black 15%, gray);
+    padding: 30px;
+    border: 3px solid black;            
+    border-bottom: 0;
+}
+.starrise {
+    font-size: 80px;
+    color: aquamarine;
+}
+
+.topnav {
+    overflow: hidden;
+    border: 2px solid black;
+    border-top: 0;
+}
+
+.topnav a {
+    float: left;
+    display: block;
+    padding: 14px 16px;
+    text-decoration: none;
+    text-align: center;
+}
+
+.topnav a:hover {
+    background-color: black;
+    color: white;
+}
+        
+.newspaper {
+    column-width: 33.33%;
+    column-count: 3;
+    column-gap: 20px;
+    text-align: center;
+    column-rule: 2px solid black;
+    color: red;
+    text-shadow: 0px 0px 8px blue;
+    cursor: pointer;
+    column-span: all;
+}
+
+.newspaper a {
+    font-size: 30px;
+}
+
+.right_column {
+    float: right;
+    width: 30%;
+    background-color: rgb(255, 156, 156);
+    border-left: 2px solid black;
+}
+
+.left_column {
+    float: right;
+    width: 70%;
+    background-color: rgb(255, 156, 156);
+}
+
+.row {
+    margin-left: 50px;
+    margin-right: 30px;
+    margin-top: 30px;
+    padding: 10px;
+    padding-top: 0;
+    height: 100%;
+}
+
+.center {
+    text-align: center;
+}
+
+.card {
+    background-color: rgb(102, 102, 102);
+    padding: 15px;
+    margin: 30px;
+}
+
+.active {
+    background-color: black;
+    color: bisque;
+}
+
+.active {
+    color: brown;
+}
+
+.new-release {
+    background-color: aquamarine;
+    color: black;
+    padding: 20px;
+    text-decoration: none;
+    margin: 9px;
+    border-bottom: 3px solid black;
+}
+
+.new-release:hover {
+    background-color: rgba(0, 0, 255, 0.507);
+    color: antiquewhite;
+    border-bottom: 0;
+    margin: 12px;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+.music {
+    background-color: antiquewhite;
+    padding: 10px 10px;
+    width: 120px;
+}
+
+.fakeing {
+    background-color: #aaa;
+    width: 100%;
+    padding: 20px;
+    display: inline-block;
+}
+
+.footer {
+    padding: 20px;
+    background: linear-gradient(to bottom, black 45%, brown);
+    color: gold;
+    margin-top: 20px;
+}
+
+.row::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+table {
+    width: 100%;
+}
+
+td, th {
+    text-align: center;
+    padding: 6px 6px;
+    width: 60px; 
+}
+
+th {
+    padding-bottom: 30px;
+}
+
+td {
+    color: goldenrod;
+}
+td:hover {
+    border-bottom: 2px solid gold;
+    border-right: 2px solid Gold;
+    border-bottom-right-radius: 8px;
+    width: 10px;
+}
+
+.artist {
+    border-radius: 50%;
+}
+
+.container {
+    margin: 30px;
+    width: auto;
+}
+
+.search-bar {
+    width: 100%;
+    max-width: 700px;
+    align-items: center;
+    border-radius: 10px;
+}
+
+.search-bar input {
+    flex: 1;
+    border: 0;
+    outline: none;
+    padding: 14px 10px;
+    font-size: 15px;
+    background-color: aliceblue;
+}
+
+::placeholder {
+    color: blue;
+}
+
+.search-bar button {
+    border: 0;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+    background: transparent;
+    backdrop-filter: blur(4px) saturate(180%);
+}
+
+.pagination {display: inline-block;}
+
+.center {text-align: center;}
+
+.pagination a {
+    color: black;
+    float: left;
+    padding: 8px 16px;
+    text-decoration: none;
+    transition: background-color .3s;
+    border: 3px solid black;
+    margin: 0 4px;
+    font-size: 22px;
+}
+
+.pagination a.active {
+    background-color: aqua;
+     color: rgba(2, 2, 117, 0.863);
+    }
+
+.pagination a:hover:not(.active) {background-color: #ddd;}
+
+.pagination a:first-child {
+    border-top-left-radius:5px ;
+    border-bottom-left-radius: 5px;
+}
+
+.pagination a:last-child {
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+.download {
+    background-color: blue;
+    color: white;
+    text-align: center;
+    padding: 15px 15px;
+    align-items: center;
+    border-radius: 50px;
+    margin-left: 30%;
+    margin-right: 30%;
+    border: 4px solid white;
+    width: 80%;
+}
+
+.download:hover {
+    background-color: blueviolet;
+}
+
+.download:active {
+    padding: 13px 13px;
+    box-shadow: 8px 8px 8px rgb(0, 0, 41);
+}
+
+@media screen and (max-width: 800px){ 
+    .left_column, .right_column {
+        width: 100%;
+        padding: 0;
+    }
+    .starrise {
+        text-align: left;
+        font-size: 50px;
+    }
+    .right_column {
+        border-left: 0;
+    }
+    .download {
+        margin-left: 0%;
+        margin-right: 0%;
+        width: 70%;
+    }
+    video, audio{
+        width: 60%;
+    }
+    video {
+        height: 100%;
+    }
+    .row {
+        margin: 0%;
+    }
+    .newspaper a{
+        font-size: 10px;
+    }
+}
