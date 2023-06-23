@@ -260,6 +260,10 @@ td:hover {
 }
 
 @media screen and (max-width: 800px){ 
+    .topnav {
+        display: flex;
+        flex-direction: column;
+    }
     .left_column, .right_column {
         width: 100%;
         padding: 0;
